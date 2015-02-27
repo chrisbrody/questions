@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      
+
+       
+
+        <section id="test">
+          <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <!-- QUESTION 1 -->
+                <div class="panel panel-default" id="q1">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question 1
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <h4>Is your child struggling in school?</h4>
+                      <button value="y" id="yes" type="button" class=" btn text-uppercase btn-lg" onclick="q1Yes()">Yes</button>
+                      <button value="n" id="no" type="button" class="btn text-uppercase btn-lg" onclick="q1No()">No</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- QUESTION 2 -->
+                <div class="panel panel-default hidden" id="q2">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Question 2
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <h4>What grade is your child in?</h4>
+                      <select class="btn btn-fresh btn-lg" onchange="question2()">
+                        <option selected="selected">Select one</option>
+                        <option value="k">k</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- QUESTION 3 -->
+                <div class="panel panel-default hidden" id="q3">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Question 3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <h4>What subject needs improvement?</h4>
+                      <select class="btn btn-lg" onchange="question3()">
+                        <option selected="selected">Subject</option>
+                        <option>Biology</option>
+                        <option>Chemistry</option>
+                        <option>Physics</option>
+                        <option>Algebra</option>
+                        <option>Geometry</option>
+                        <option>Pre-calculus</option>
+                        <option>Calculus</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- CALL TO ACTION -->
+                <div class="panel panel-default hidden" id="cta">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Here is how we can help
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <div class="col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum fermentum tortor, sed eleifend tortor fermentum vel. In ut nunc condimentum, egestas nulla et, condimentum felis. Nam a lorem in diam scelerisque vestibulum cursus eu turpis. In vel posuere nisl.</p>
+                        <br>
+                        <button class="btn btn-lg">Click Me</button>
+                      </div>
+                      <div class="col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum fermentum tortor, sed eleifend tortor fermentum vel. In ut nunc condimentum, egestas nulla et, condimentum felis. Nam a lorem in diam scelerisque vestibulum cursus eu turpis. In vel posuere nisl.</p>
+                        <br>
+                        <button class="btn btn-danger btn-lg">Click Me More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </section>   
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        
+
+    </body>
+</html>
